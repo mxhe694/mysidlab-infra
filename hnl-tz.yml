@@ -6,7 +6,7 @@
   become: true
   vars:
     hostname: ec2-3-135-206-23.us-east-2.compute.amazonaws.com
-    tz: Americas/Hawaii
+    tz: Pacific/Honolulu
     token: T04NJ722U/BQB4MBBHV/RZPNWsz38MD1WtuVcena5reb
     
   tasks:
