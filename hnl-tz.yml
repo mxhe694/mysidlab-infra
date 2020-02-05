@@ -5,8 +5,8 @@
   gather_facts: False
   become: true
   vars:
-    hostname: taranto-cateyes
-    tz: Antarctica/McMurdo
+    hostname: ec2-3-135-206-23.us-east-2.compute.amazonaws.com
+    tz: Americas/Hawaii
     token: T04NJ722U/BQB4MBBHV/RZPNWsz38MD1WtuVcena5reb
     
   tasks:
