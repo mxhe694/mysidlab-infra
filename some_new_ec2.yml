@@ -21,13 +21,14 @@
         vpc_subnet_id: subnet-e45a7a8c
         assign_public_ip: yes
         instance_tags:
-          Name: "Jonathan's Awesome Instance"
+          Name: "05's Awesome Instance"
+          Event: "Honolulu Demo"
           location: ohio-ansible-cluster
       register: ec2
 
     - name: Ensure new instance is in host group
       add_host:
-        hostname: "{{ item.public_ip }}"
+        hostname: "{{ item.public_dns_name }}"
         groupname: launched
       loop: "{{ ec2.instances }}"
 
